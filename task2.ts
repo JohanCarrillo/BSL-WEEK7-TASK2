@@ -6,6 +6,8 @@ abstract class Character {
 	}
 
 	abstract usePower(): void;
+	
+	abstract speak(): void;
 }
 
 class Shrek extends Character {
@@ -14,7 +16,11 @@ class Shrek extends Character {
 	}
 
 	usePower(): void {
-		console.log('Fart');
+		console.log(`${this.name} Fart and cook a rat`);
+	}
+	
+	speak(): void {
+		console.log('*Say something in ogre')
 	}
 }
 
@@ -24,7 +30,11 @@ class Donkey extends Character {
 	}
 
 	usePower(): void {
-		console.log('Sing');
+		console.log(`${this.name} F*** a dragonette and sing`);
+	}
+	
+	speak(): void {
+		console.log('*Talk about friendship')
 	}
 }
 
@@ -35,6 +45,10 @@ class LordFarquaad extends Character {
 	}
 
 	usePower(): void {
-		console.log('Spend money');
+		console.log(`${this.name} Spend money and be short`);
+	}
+	
+	speak(): void {
+		console.log('*Say something about how ugly Shrek is');
 	}
 }
